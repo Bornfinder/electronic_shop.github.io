@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <style>
+        body{
+            word-spacing: 3px;
+            text-align: justify;
+        }
+        #box
+        {
+            position: center;
+            max-width: fit-content;
+            background-color: rgb(231, 211, 231);
+
+        }
+        #input1{
+            display: flex;
+            flex-direction: column;
+        }
+        .inside1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(243, 235, 220);
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+
+        li a{
+            font-size: 10px;
+            color: green;
+            
+        }
+        a:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box">
+    <form action="consumer" id="input1">
+    <input type="text" placeholder="Enter Recipient Name" class="inside1">
+    <input type="tel"  placeholder="Phone no." class="inside1">
+    <input type="text" placeholder="Enter Flat/ House No./ Floor" class="inside1">
+    <input type="text" placeholder="Enter Conlony/ Street / Locality" class="inside1">
+    <input type="text" placeholder="Landmark" class="inside1">
+    <input type="text" placeholder="City" class="inside1">
+    <input type="text" placeholder="State" class="inside1">
+    <input type="number" min="6" max="6" placeholder="Pincode" class="inside1">
+
+    </form>
+    <span><input type="submit" ></span><span><input type="reset"></span>
+    </div>
+
+    <li><a href="homepage.html">irc international</a></li>
+
+    
+</body>
+</html>
