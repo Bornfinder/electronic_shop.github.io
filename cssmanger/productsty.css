@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+  } 
+.first_c{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.product_l{
+    background-color: rgb(255, 255, 255);
+    height: 625px;
+    width: 325px;
+    margin: 5px;
+    border: 1px solid #e8e8e8;    
+}
+.product_l:hover{
+    background-color: rgb(230, 230, 229);
+}
+.extra_div{
+    display: flex;
+    width: 325px;
+    height: 100px;
+    border: 0ch;
+}
+.extra_div2{
+    width: 165px;
+    height: 100px;
+    border: 0ch;
+    /* background-color: rgba(0, 0, 0, 0.205); */
+}
+.imgdiv{
+    width: 325px;
+    height: 225px;
+    display: flex;  
+    z-index: -1;
+}
+.chimgdiv{
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+
+}
+
+  .changeableimg{
+    width: auto;
+    height: 180px;
+    text-align: center;
+    /* outline: none;
+    position: absolute;
+    overflow: hidden;
+    padding-top: 50px;  */
+     
+} 
+.imgdiv0{
+     z-index: 2;
+     display: flex; 
+     flex-direction: column;
+     margin-left: auto;
+    
+}
+
+.imgdiv1{
+    width: 50px;
+    height: 50px;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgb(44 48 56 / 40%);
+    border-radius: 3px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    
+} 
+.fiximgdic{
+    background-color: azure;
+    
+}
+
+
+
+.imgdiv1:hover{
+    position: relative;
+      width: 200px;  
+      right: 150px; 
+   
+
+}
+
+.realprice{
+    color: blue;
+}
+.fakeprice{
+    text-decoration: line-through;
+    color: red;
+}
+.addtocart{
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
+.viewdetails{
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+}
+
+ .dcontaner{
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+ }
