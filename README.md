@@ -1,2 +1,2 @@
 # electronic_shop
-run
+main
