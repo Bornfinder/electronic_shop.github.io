@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssmanger/homepage.css">
+  
+    
+    <title>start page</title>
+</head>
+<body>
+    <div>
+      
+        <span>Brandnamespace</span>
+        <span><input type="text"><input type="submit" value="search"></span>
+        <span>
+          <button class="btnlog" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        </span>
+        <div >
+          <link rel="stylesheet" href="cssmanger/login.css">
+          <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input class="inlog" type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input class="inlog" type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button class="btnlog" type="submit">Login</button>
+                <label>
+                  <input class="inlog" type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btnlog cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+        <samp><button> <img src="" alt="card"></button></samp>
+    </div>
+
+    <div id="ss">
+      
+      <link rel="stylesheet" href="cssmanger/ss.css">
+      
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="compic/ss1.webp" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="compic/ss2.webp" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="compic/ss3.webp" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="jsmanger/ss.js"></script>
+
+  <!-- <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 6000); // Change image every 6 seconds
+    }
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <hr>
+    <div style="color: aliceblue;  background-color: black; ">
+     
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+        <a href="">FAQ</a>
+    </div>
+    <hr>
+   
+    <div class="tab">
+        <button class="tablinks" onclick="device(event, 'ShopAll')">SHOP ALL</button>
+        <button class="tablinks" onclick="device(event, 'Computers')">Computers</button>
+        <button class="tablinks" onclick="device(event, 'Laptops')">laptop</button>
+        <button class="tablinks" onclick="device(event, 'Tablets')">Tablets</button>
+        <button class="tablinks" onclick="device(event, 'DroCam')">Drones and Cameras</button>
+        <button class="tablinks" onclick="device(event, 'Mobile')">Mobile</button>
+    
+    </div>
+    <hr>
+   
+   
+<!-- Tab content -->
+<div id="ShopAll" class="tabcontent">
+  
+  <h3>Computers</h3>
+  <iframe src="stml/pcomputerlist.html" frameborder="0"  ></iframe>
+  <h3>Laptops</h3>
+  <iframe src="stml/plaptopslist.html" frameborder="0"  ></iframe>
+  <h3>Tablets</h3>
+  <iframe src="stml/ptabletlist.html" frameborder="0"></iframe>
+  <h3>Drones and Cameras</h3>
+  <iframe src="stml/pdclist.html" frameborder="0"></iframe>
+  <h3>Mobile</h3>
+  <iframe src="stml/pmobilelist.html" frameborder="0" ></iframe>
+</div>
+
+<div id="Computers" class="tabcontent">
+  <h3>Computers</h3>
+  <iframe src="stml/pcomputerlist.html" frameborder="0"  ></iframe>
+</div>
+
+<div id="Laptops" class="tabcontent">
+    <h3>Laptops</h3>
+    <iframe src="stml/plaptopslist.html" frameborder="0"  ></iframe>
+  </div>
+  
+  <div id="Tablets" class="tabcontent">
+    <h3>Tablets</h3>
+   <iframe src="stml/ptabletlist.html" frameborder="0"></iframe>
+  </div>
+  
+  <div id="DroCam" class="tabcontent">
+    <h3>Drones and Cameras</h3>
+    <iframe src="stml/pdclist.html" frameborder="0"></iframe>
+  </div>
+  <div id="Mobile" class="tabcontent">
+    <h3>Mobile</h3>
+    <iframe src="stml/pmobilelist.html" frameborder="0"></iframe>
+  </div>
+
+  <script>
+    function device(evt, deviceName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      console.log(tabcontent);
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      console.log(tablinks);
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(deviceName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+    
+    
+</body>
+</html>
